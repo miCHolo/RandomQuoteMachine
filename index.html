@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Quote Machine</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app" v-bind:style="{backgroundColor: bgColor}">
+        <div id="gen">
+            <div class="row" v-bind:style="{color: bgColor}">
+                <div id="quote" class="col-md-12 col-sm-12">{{quote}}</div>
+            </div>
+            <div class="row">
+                <div id="author" class="col-md-12 col-sm-12 text-right">{{author}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2">
+                    <input class="btn btn-default" type="button" v-on:click="submit" name="submit" value="Submit" v-bind:style="{backgroundColor: bgColor}">
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <a id="tweet" v-bind:href="'https://twitter.com/intent/tweet?text=' + quote" data-toggle="tooltip" title="Tweet the quote"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

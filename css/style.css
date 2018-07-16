@@ -1,0 +1,35 @@
+#gen {
+  margin-right: 500px;
+  margin-left: 500px;
+  margin-top: 50px;
+  background-color: darkslategrey;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 20px 5px black;
+}
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+}
+#tweet {
+  font-size: 30px;
+}
+.btn-default {
+  background-color: #dac7c7;
+  color: black;
+  border-radius: 0;
+}
+.btn-default:hover {
+  box-shadow: 0 0 10px 5px black;
+}
+#quote {
+  font-family: 'Handlee';
+  font-size: 50px;
+}
+#author {
+  font-size: 30px;
+  font-style: italic;
+  color: azure;
+}
